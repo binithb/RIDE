@@ -12,13 +12,14 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-from wx.html import HtmlEasyPrinting
+#from wx.html import HtmlEasyPrinting
 
 
-class Printing(HtmlEasyPrinting):
+class Printing():
 
     def __init__(self, parent):
-        HtmlEasyPrinting.__init__(self, parentWindow=parent)
+        #HtmlEasyPrinting.__init__(self, parentWindow=parent)
+	pass
 
     def GetHtmlText(self,text):
         text = text.replace('\t', '&nbsp;&nbsp;&nbsp;&nbsp;')

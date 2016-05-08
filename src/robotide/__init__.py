@@ -48,12 +48,12 @@ except ImportError as e:
         print("python should be executed in 32-bit mode with wxPython on OSX.")
     else:
         print(errorMessageTemplate.substitute(reason="wxPython not found."))
-    sys.exit(1)
+#    sys.exit(1)
 
-if "ansi" in wx.PlatformInfo:
-    print(errorMessageTemplate.substitute(
-        reason="wxPython with ansi encoding is not supported"))
-    sys.exit(1)
+#if "ansi" in wx.PlatformInfo:
+#    print(errorMessageTemplate.substitute(
+#        reason="wxPython with ansi encoding is not supported"))
+#    sys.exit(1)
 
 
 # Insert bundled robot to path before anything else
